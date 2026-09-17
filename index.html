@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Panorama de Mercado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Public+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root {
+  --paper:#f2efe7; --ink:#1b2420; --muted:#6b6558; --accent:#1f5c6b;
+  --sube:#1e7145; --baja:#b33a3a; --rule:#d8d3c4; --card:#fff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper:#14181a; --ink:#e8e6de; --muted:#9b968a; --accent:#5db3c4;
+    --sube:#4caf7d; --baja:#e2726b; --rule:#2a2e2c; --card:#1c2123;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Public Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.5;padding-inline:18px;padding-block:28px;max-width:720px;margin-inline:auto;
+  font-variant-numeric:tabular-nums}
+h1,h2,h3{font-family:"Source Serif 4",Georgia,serif;font-weight:600;margin:0;text-wrap:balance}
+header{border-bottom:2px solid var(--ink);padding-bottom:12px;margin-bottom:26px;
+  display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+header h1{font-size:1.6rem}
+header .gen{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.dia.hoy{background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:20px;margin-bottom:34px}
+.dia.hoy h2{font-size:1.25rem;margin-bottom:16px}
+details.dia{border-bottom:1px solid var(--rule)}
+details.dia summary{cursor:pointer;padding-block:13px;font-family:"Source Serif 4",Georgia,serif;font-size:1.02rem}
+details.dia[open] summary{color:var(--accent)}
+details.dia > div, details.dia > section{margin-bottom:14px}
+.titulo-historial{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);
+  font-family:"Public Sans",sans-serif;font-weight:700;border-bottom:1px solid var(--rule);
+  padding-bottom:8px;margin-bottom:2px}
+.indices{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.indice{flex:1 1 150px;border:1px solid var(--rule);border-radius:4px;padding:11px 13px;
+  display:flex;flex-direction:column;gap:2px}
+.indice .nombre{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.indice .cierre{font-size:1.15rem;font-weight:600}
+.cambio{font-weight:600;font-size:.9rem}
+.cambio.sube{color:var(--sube)} .cambio.baja{color:var(--baja)} .cambio.neutro{color:var(--muted)}
+.columnas{display:flex;gap:26px;flex-wrap:wrap;margin-bottom:24px}
+.columnas section{flex:1 1 240px;min-width:0}
+h3{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);
+  font-family:"Public Sans",sans-serif;font-weight:700;margin-bottom:8px}
+ul{list-style:none;margin:0;padding:0}
+.movs li{display:flex;align-items:baseline;gap:8px;padding-block:5px;border-bottom:1px solid var(--rule)}
+.movs .tk{font-weight:600;width:56px;flex-shrink:0}
+.movs .pr{color:var(--muted);font-size:.88rem;flex:1}
+.titulares li{padding-block:8px;border-bottom:1px solid var(--rule)}
+.titulares a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--accent)}
+.titulares a:hover,.titulares a:focus{color:var(--accent)}
+.titulares .original{display:block;font-size:.78rem;color:var(--muted);font-style:italic;margin-top:3px}
+.titulares .fuente{display:block;font-size:.72rem;color:var(--muted);margin-top:2px;
+  text-transform:uppercase;letter-spacing:.05em}
+.vacio{color:var(--muted)}
+.pie{margin-top:32px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:.78rem;color:var(--muted)}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Panorama de Mercado</h1>
+  <span class="gen">generado 2026-09-17 17:20 UTC</span>
+</header>
+<div class="dia hoy"><h2>Jueves 17 de septiembre de 2026</h2>
+      <div class="indices"><div class="indice"><span class="nombre">S&amp;P 500</span><span class="cierre">7,633.48</span><span class="cambio sube">+1.08%</span></div><div class="indice"><span class="nombre">Nasdaq</span><span class="cierre">26,393.73</span><span class="cambio sube">+1.60%</span></div><div class="indice"><span class="nombre">Dow Jones</span><span class="cierre">51,791.16</span><span class="cambio sube">+0.64%</span></div></div>
+      <div class="columnas">
+        <section>
+          <h3>Las que mas subieron</h3>
+          <ul class="movs"><li><span class="tk">INTC</span><span class="pr">111.03</span><span class="cambio sube">+9.88%</span></li><li><span class="tk">AMD</span><span class="pr">548.50</span><span class="cambio sube">+7.02%</span></li><li><span class="tk">MU</span><span class="pr">977.57</span><span class="cambio sube">+5.51%</span></li><li><span class="tk">ORCL</span><span class="pr">149.84</span><span class="cambio sube">+4.67%</span></li><li><span class="tk">GM</span><span class="pr">87.12</span><span class="cambio sube">+3.36%</span></li><li><span class="tk">QCOM</span><span class="pr">190.49</span><span class="cambio sube">+3.06%</span></li></ul>
+        </section>
+        <section>
+          <h3>Las que mas bajaron</h3>
+          <ul class="movs"><li><span class="tk">CRM</span><span class="pr">242.94</span><span class="cambio baja">-3.03%</span></li><li><span class="tk">VZ</span><span class="pr">48.58</span><span class="cambio baja">-2.36%</span></li><li><span class="tk">T</span><span class="pr">25.42</span><span class="cambio baja">-1.72%</span></li><li><span class="tk">BA</span><span class="pr">198.71</span><span class="cambio baja">-1.61%</span></li><li><span class="tk">DIS</span><span class="pr">105.74</span><span class="cambio baja">-1.17%</span></li><li><span class="tk">NFLX</span><span class="pr">75.61</span><span class="cambio baja">-1.05%</span></li></ul>
+        </section>
+      </div>
+      <section class="titulares">
+        <h3>Titulares del dia</h3>
+        <ul><li><a href="https://finance.yahoo.com/markets/crypto/articles/mysterious-trader-moves-122-million-164740089.html" target="_blank" rel="noopener">El misterioso trader mueve 122 millones de $ antes de la decisión de la Fed a las 14:00</a><span class="original">Mysterious trader moves $122 million ahead of Fed&#x27;s 2 p.m. decision</span><span class="fuente">Yahoo Finance</span></li><li><a href="https://finance.yahoo.com/technology/live/tech-stocks-today-openai-reveals-six-more-instances-of-concerning-model-behavior-140134624.html" target="_blank" rel="noopener">Acciones tecnológicas hoy: OpenAI revela seis casos más de &quot;comportamiento de modelo preocupante&quot;</a><span class="original">Tech stocks today: OpenAI reveals six more instances of &#x27;concerning model behavior&#x27;</span><span class="fuente">Yahoo Finance</span></li><li><a href="https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-17-dow-sp-500-nasdaq-oil-fed-081248626.html" target="_blank" rel="noopener">Mercado de valores hoy: Dow, S&amp;P 500, Nasdaq suben a medida que el petróleo cae, la subida de tipos de la Fed apacigua las preocupaciones de inflación de los mercados</a><span class="original">Stock market today: Dow, S&amp;P 500, Nasdaq rise as oil slips, Fed rate hike pacifies markets&#x27; inflation worries</span><span class="fuente">Yahoo Finance</span></li><li><a href="https://finance.yahoo.com/markets/stocks/articles/airbaltic-shrinking-ryanair-moving-165823095.html" target="_blank" rel="noopener">airBaltic se está reduciendo. Ryanair se está mudando.</a><span class="original">airBaltic Is Shrinking. Ryanair Is Moving In.</span><span class="fuente">Yahoo Finance</span></li><li><a href="https://www.cnbc.com/2026/09/17/bank-of-england-interest-rate-decision-fed-rate-hike-uk-inflation.html" target="_blank" rel="noopener">El Banco de Inglaterra desafía la ventaja de la subida de tipos de la Fed, dejando los tipos sin cambios</a><span class="original">Bank of England defies Fed&#x27;s rate-hike lead, leaving rates unchanged</span><span class="fuente">CNBC Markets</span></li><li><a href="https://www.cnbc.com/2026/09/16/transport-economy-diesel-prices-iran.html" target="_blank" rel="noopener">&#x27;Ciencia ficción&#x27;: las empresas de transporte, la columna vertebral de la economía, están haciendo sonar la alarma sobre los precios de los combustibles</a><span class="original">&#x27;Science fiction&#x27;: Transport companies - the backbone of economy - are sounding alarm on fuel prices</span><span class="fuente">CNBC Markets</span></li><li><a href="https://www.cnbc.com/2026/09/16/oil-prices-treasury-yields-consumers-iran.html" target="_blank" rel="noopener">Consumidores golpeados por el doble golpe del petróleo y las tarifas de la guerra de Irán. La factura estimada es de $ 1,700 por hogar</a><span class="original">Consumers hit by one-two punch of oil and rates from Iran war. The estimated bill is $1,700 per household</span><span class="fuente">CNBC Markets</span></li><li><a href="https://www.cnbc.com/2026/09/16/uk-august-inflation-energy-gasoline.html" target="_blank" rel="noopener">La inflación en el Reino Unido sube al 3,1% a medida que aumentan los costes de la energía</a><span class="original">UK inflation jumps to 3.1% as energy costs soar</span><span class="fuente">CNBC Markets</span></li><li><a href="https://www.investing.com/news/stock-market-news/ecopetrol-names-carlos-augusto-suarez-as-board-chairman-93CH-4906158" target="_blank" rel="noopener">Ecopetrol nombra a Carlos Augusto Suárez como presidente del directorio</a><span class="original">Ecopetrol names Carlos Augusto Suarez as board chairman</span><span class="fuente">Investing.com</span></li><li><a href="https://www.investing.com/news/stock-market-news/holtec-nuclear-suspends-planned-us-ipo-bloomberg-news-reports-4904657" target="_blank" rel="noopener">Holtec Nuclear abandona la salida a bolsa de EE. UU. mientras la turbulencia del comercio de IA sacude los mercados</a><span class="original">Holtec Nuclear shelves US IPO as AI trade turbulence rattles markets</span><span class="fuente">Investing.com</span></li><li><a href="https://www.investing.com/news/stock-market-news/us-securities-regulator-rolls-out-fiveyear-exemption-for-tokenized-stock-trading-4905776" target="_blank" rel="noopener">El regulador de valores de EE. UU. implementa una exención de cinco años para la negociación de acciones tokenizadas</a><span class="original">US securities regulator rolls out five-year exemption for tokenized stock trading</span><span class="fuente">Investing.com</span></li><li><a href="https://www.investing.com/news/stock-market-news/bofa-says-hawkeye-360-is-flying-below-the-radar-4906147" target="_blank" rel="noopener">BofA dice que HawkEye 360 está &quot;volando por debajo del radar&quot;</a><span class="original">BofA says HawkEye 360 is &#x27;flying below the radar&#x27;</span><span class="fuente">Investing.com</span></li></ul>
+      </section></div>
+<p class="pie">Datos de cierre via Yahoo Finance, titulares via MarketWatch e Investing.com.
+Esto es informacion para investigar por tu cuenta, no una recomendacion financiera.</p>
+</body>
+</html>
