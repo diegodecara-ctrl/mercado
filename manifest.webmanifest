@@ -1,0 +1,17 @@
+{
+  "name": "Panorama de Mercado",
+  "short_name": "Mercado",
+  "description": "Resumen diario del cierre de Wall Street: indices, movimientos y titulares en castellano.",
+  "lang": "es",
+  "start_url": "/mercado/",
+  "scope": "/mercado/",
+  "display": "standalone",
+  "background_color": "#f2efe7",
+  "theme_color": "#1f5c6b",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-192-maskable.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
